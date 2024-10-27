@@ -8,7 +8,7 @@ import { MercadoPago } from '../interface/interface-mercadopago';
 })
 export class MercadopagoService {
 
-  url:string='http://localhost:8080/api/mercado'
+  url:string='https://spring-prueba-nq43.onrender.com/api/mercado'
   url2:string='https://pokeapi.co/api/v2/pokemon/ditto'
   constructor(private Http:HttpClient) { }
 
