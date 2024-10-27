@@ -1,0 +1,19 @@
+.thumbnail {
+  cursor: pointer;
+  transition: all 0.3s;
+  object-fit: cover;
+}
+
+.thumbnail:hover {
+  opacity: 0.8;
+}
+
+.thumbnail.active {
+  border: 2px solid #007bff;
+}
+
+@media (max-width: 768px) {
+  .thumbnail {
+    width: 80px !important;  
+  }
+}

@@ -1,0 +1,24 @@
+<div class="d-flex flex-column flex-md-row justify-content-between">
+  <div class="col-md-2 order-2 order-md-1">
+    <div class="d-flex flex-row flex-md-column gap-2 mb-3">
+      <img
+        *ngFor="let image of thumbnails"
+        [src]="image.src"
+        [class.active]="image.active"
+        class="thumbnail"
+        width="100"
+        (click)="cambiarImagen(image.src, image)"
+        alt="Thumbnail Image"
+      />
+    </div>
+  </div>
+  <div class="col-md-9 order-1 order-md-2 mb-3">
+    <img
+      [src]="selectedImage"
+      class="img-fluid"
+      id="mainImage"
+      alt="Main Image"
+      style="height: auto; max-width: 100%;"
+    />
+  </div>
+</div>

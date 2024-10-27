@@ -1,0 +1,39 @@
+:root {
+    --bs-body-bg: #ffffff !important;
+    --bs-body-color: #212529 !important;
+    --bs-tertiary-bg: #f8f9fa !important;
+}
+
+body {
+    background-color: var(--bs-body-bg) !important;
+    color: var(--bs-body-color) !important;
+}
+
+.navbar {
+    background-color: var(--bs-tertiary-bg) !important;
+}
+
+
+.card, 
+.dropdown-menu,
+.modal-content,
+.list-group-item {
+    background-color: var(--bs-body-bg) !important;
+    color: var(--bs-body-color) !important;
+}
+
+.btn-primary {
+    color: #fff !important;
+}
+
+
+[data-bs-theme=light] {
+    --bs-body-bg: #ffffff;
+    --bs-body-color: #212529;
+    --bs-emphasis-color: #000;
+    --bs-secondary-color: #6c757d;
+    --bs-secondary-bg: #f8f9fa;
+    --bs-tertiary-color: rgba(33, 37, 41, 0.5);
+    --bs-tertiary-bg: #f8f9fa;
+    --bs-border-color: #dee2e6;
+}
